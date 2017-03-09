@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GySurface.Samples", "GySurface.Samples", "{E71B67D0-3262-4C70-A5C4-2BB955D67B90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GySurface.Samples.Startup", "GySurface.Samples\GySurface.Samples.Startup\GySurface.Samples.Startup.csproj", "{271D0913-BFD0-4ED4-82AF-189220A7FEEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GySurface.Samples.Shell", "GySurface.Samples\GySurface.Samples.Shell\GySurface.Samples.Shell.csproj", "{AB6E677D-7F3B-4B7B-81ED-D1461CB64301}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GySurface.Samples.Skeleton", "GySurface.Samples\GySurface.Samples.Skeleton\GySurface.Samples.Skeleton.csproj", "{07691CE1-C058-4D70-B4AF-A895679FECCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GySurface.Samples.Addins.SampleAddin", "GySurface.Samples\GySurface.Samples.Addins.SampleAddin\GySurface.Samples.Addins.SampleAddin.csproj", "{099A0798-1949-4166-AB06-4ABA6BF46076}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{271D0913-BFD0-4ED4-82AF-189220A7FEEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{271D0913-BFD0-4ED4-82AF-189220A7FEEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{271D0913-BFD0-4ED4-82AF-189220A7FEEC}.Debug|x86.ActiveCfg = Debug|x86
+		{271D0913-BFD0-4ED4-82AF-189220A7FEEC}.Debug|x86.Build.0 = Debug|x86
+		{271D0913-BFD0-4ED4-82AF-189220A7FEEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{271D0913-BFD0-4ED4-82AF-189220A7FEEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{271D0913-BFD0-4ED4-82AF-189220A7FEEC}.Release|x86.ActiveCfg = Release|x86
+		{271D0913-BFD0-4ED4-82AF-189220A7FEEC}.Release|x86.Build.0 = Release|x86
+		{AB6E677D-7F3B-4B7B-81ED-D1461CB64301}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB6E677D-7F3B-4B7B-81ED-D1461CB64301}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB6E677D-7F3B-4B7B-81ED-D1461CB64301}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AB6E677D-7F3B-4B7B-81ED-D1461CB64301}.Debug|x86.Build.0 = Debug|Any CPU
+		{AB6E677D-7F3B-4B7B-81ED-D1461CB64301}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB6E677D-7F3B-4B7B-81ED-D1461CB64301}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB6E677D-7F3B-4B7B-81ED-D1461CB64301}.Release|x86.ActiveCfg = Release|Any CPU
+		{AB6E677D-7F3B-4B7B-81ED-D1461CB64301}.Release|x86.Build.0 = Release|Any CPU
+		{07691CE1-C058-4D70-B4AF-A895679FECCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07691CE1-C058-4D70-B4AF-A895679FECCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07691CE1-C058-4D70-B4AF-A895679FECCB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{07691CE1-C058-4D70-B4AF-A895679FECCB}.Debug|x86.Build.0 = Debug|Any CPU
+		{07691CE1-C058-4D70-B4AF-A895679FECCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07691CE1-C058-4D70-B4AF-A895679FECCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07691CE1-C058-4D70-B4AF-A895679FECCB}.Release|x86.ActiveCfg = Release|Any CPU
+		{07691CE1-C058-4D70-B4AF-A895679FECCB}.Release|x86.Build.0 = Release|Any CPU
+		{099A0798-1949-4166-AB06-4ABA6BF46076}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{099A0798-1949-4166-AB06-4ABA6BF46076}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{099A0798-1949-4166-AB06-4ABA6BF46076}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{099A0798-1949-4166-AB06-4ABA6BF46076}.Debug|x86.Build.0 = Debug|Any CPU
+		{099A0798-1949-4166-AB06-4ABA6BF46076}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{099A0798-1949-4166-AB06-4ABA6BF46076}.Release|Any CPU.Build.0 = Release|Any CPU
+		{099A0798-1949-4166-AB06-4ABA6BF46076}.Release|x86.ActiveCfg = Release|Any CPU
+		{099A0798-1949-4166-AB06-4ABA6BF46076}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{271D0913-BFD0-4ED4-82AF-189220A7FEEC} = {E71B67D0-3262-4C70-A5C4-2BB955D67B90}
+		{AB6E677D-7F3B-4B7B-81ED-D1461CB64301} = {E71B67D0-3262-4C70-A5C4-2BB955D67B90}
+		{07691CE1-C058-4D70-B4AF-A895679FECCB} = {E71B67D0-3262-4C70-A5C4-2BB955D67B90}
+		{099A0798-1949-4166-AB06-4ABA6BF46076} = {E71B67D0-3262-4C70-A5C4-2BB955D67B90}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,46 @@
+﻿<UserControl x:Class="GySurface.Samples.Skeleton.Workareas.HomeWorkarea"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:avalonDock="http://schemas.xceed.com/wpf/xaml/avalondock"   
+             xmlns:local="clr-namespace:GySurface.Samples.Skeleton.Workareas"
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="600">
+    <DockPanel LastChildFill="True">
+
+        <Grid DockPanel.Dock="Top" Background="White" Height="30">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="10 0 10 0">
+                <Button x:Name="btnNew" Grid.Column="1" VerticalAlignment="Center" Click="btnNew_Click">
+                    <Image Source="../Images/NewTab.png" Width="12" Height="12" />
+                </Button>
+            </StackPanel>
+        </Grid>
+
+        <avalonDock:DockingManager x:Name="dockingManager" Grid.Row="1" >
+            <avalonDock:DockingManager.DocumentHeaderTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="{Binding IconSource}" Margin="0,0,4,0"/>
+                        <TextBlock Text="{Binding Title}" TextTrimming="CharacterEllipsis"/>
+
+                    </StackPanel>
+                </DataTemplate>
+            </avalonDock:DockingManager.DocumentHeaderTemplate>
+
+            <avalonDock:LayoutRoot >
+                <avalonDock:LayoutPanel Orientation="Horizontal">
+                    <avalonDock:LayoutPanel Orientation="Vertical">
+                        <avalonDock:LayoutDocumentPaneGroup >
+                            <avalonDock:LayoutDocumentPane x:Name="mainPane" >
+
+                            </avalonDock:LayoutDocumentPane>
+                        </avalonDock:LayoutDocumentPaneGroup>
+                    </avalonDock:LayoutPanel>                 
+                </avalonDock:LayoutPanel>
+
+            </avalonDock:LayoutRoot>
+
+        </avalonDock:DockingManager>
+    </DockPanel>
+</UserControl>

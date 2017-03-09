@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Addin
+  id="SampleAddin"
+  name="Sample Addin"
+  version="1.0"
+  author="guyoung"
+  copyright=""
+  url=""
+  description="Sample Addin"
+  category=""
+  defaultEnabled="true">
+
+  <Dependencies>
+    <Addin id="_Shell" version="1.0" />
+    <Addin id="_Skeleton" version="1.0" />
+  </Dependencies>
+
+  <Runtime>
+
+
+  </Runtime>
+
+
+
+  <Extension path = "/Shell/MainMenu/Tools">
+    <Menu id="SampleAddinMenu" label="Sample Addin">
+      <MenuItem label="Hello" command="ShowExtenderCommand" commandParameter="SampleAddin.HelloExtender"  />
+    </Menu>
+  </Extension>
+
+
+  <Extension path = "/Shell/Extenders">
+    <Extender id="SampleAddin.HelloExtender" name="Hello"  title="Hello" type="GySurface.Samples.Addins.SampleAddin.HelloExtender" />
+  </Extension>
+
+
+  
+</Addin>

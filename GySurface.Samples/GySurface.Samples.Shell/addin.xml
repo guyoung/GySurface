@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Addin
+  id="_Shell"
+  name="_Shell"
+  version="1.0"
+  author="guyoung"
+  copyright=""
+  url=""
+  description=""
+  category="framework"
+  defaultEnabled="true">
+
+  <Dependencies>
+    <Addin id="_Host" version="1.0" />
+  </Dependencies>
+
+  <Runtime>
+
+
+  </Runtime>
+
+  <Extension path = "/Startup">
+    <Shell id="Shell" class="GySurface.Samples.Shell.MainWindow" />
+  </Extension>
+
+  <ExtensionPoint path="/Shell/Commands" name="/Shell/Commands" >
+    <Description></Description>
+    <ExtensionNode name="Command" type="GySurface.Framework.Addin.ExtensionModels.CommandExtensionNode"  />
+  </ExtensionPoint>
+
+  <ExtensionPoint path="/Shell/MainMenu" name="/Shell/MainMenu" >
+    <Description></Description>
+    <ExtensionNode name="Menu" type="GySurface.Framework.Addin.ExtensionModels.SubmenuExtensionNode"  />
+  </ExtensionPoint>
+
+  <ExtensionPoint path="/Shell/ThemeMenu" name="/Shell/ThemeMenu" >
+    <Description></Description>
+    <ExtensionNode name="Menu" type="GySurface.Framework.Addin.ExtensionModels.SubmenuExtensionNode"  />
+  </ExtensionPoint>
+
+
+
+  <ExtensionPoint path="/Shell/Extenders" name="/Shell/Extenders" >
+    <Description></Description>
+    <ExtensionNode name="Extender" type="GySurface.Framework.Addin.ExtensionModels.ExtenderExtensionNode"  />
+  </ExtensionPoint>
+
+
+  <ExtensionPoint path="/Shell/Services" name="/Shell/Services" >
+    <Description></Description>
+    <ExtensionNode name="Service"  />
+  </ExtensionPoint>
+
+  <ExtensionPoint path="/Shell/Workareas" name="/Shell/Workareas" >
+    <Description></Description>
+    <ExtensionNode name="Workarea" type="GySurface.Framework.Addin.ExtensionModels.DocumentExtensionNode"  />
+  </ExtensionPoint>
+
+  <Extension path="/Shell/Commands">
+    <Command id="ExitCommand" commandType="GySurface.Samples.Shell.Commands.ExitCommand" />
+
+    <Command id="ChangeThemeCommand" commandType="GySurface.Samples.Shell.Commands.ChangeThemeCommand" />
+
+    <Command id="AboutCommand" commandType="GySurface.Samples.Shell.Commands.AboutCommand" />
+    <Command id="OpenHelpLinkCommand" commandType="GySurface.Samples.Shell.Commands.OpenHelpLinkCommand" />
+
+    <Command id="ShowExtenderCommand" commandType="GySurface.Samples.Shell.Commands.ShowExtenderCommand" />
+    <Command id="ShowExtenderDialogCommand" commandType="GySurface.Samples.Shell.Commands.ShowExtenderDialogCommand" />
+  </Extension>
+
+  <Extension path = "/Shell/MainMenu">
+    <Menu id="Tools" label="Tools"></Menu>
+    <Menu id="Help" label="Help"></Menu>
+  </Extension>
+
+
+  <Extension path = "/Shell/MainMenu/Help">
+    <MenuItem id="AboutMenu" label="About..." command="AboutCommand"  />
+  </Extension>
+
+
+
+  <Extension path = "/Shell/ThemeMenu">
+    <Menu id="LightMenu" label="Light">
+      <MenuItem id="AmberLightTheme" label="Amber" command="ChangeThemeCommand" commandParameter="Amber,BaseLight" />
+      <MenuItem id="BlueLightTheme" label="Blue" command="ChangeThemeCommand" commandParameter="Blue,BaseLight" />
+      <MenuItem id="BrownLightTheme" label="Brown" command="ChangeThemeCommand" commandParameter="Brown,BaseLight" />
+      <MenuItem id="CobaltLightTheme" label="Cobalt" command="ChangeThemeCommand" commandParameter="Cobalt,BaseLight" />
+      <MenuItem id="CrimsonLightTheme" label="Crimson" command="ChangeThemeCommand" commandParameter="Crimson,BaseLight" />
+      <MenuItem id="CyanLightTheme" label="Cyan" command="ChangeThemeCommand" commandParameter="Cyan,BaseLight" />
+      <MenuItem id="EmeraldLightTheme" label="Emerald" command="ChangeThemeCommand" commandParameter="Emerald,BaseLight" />
+      <MenuItem id="GreenLightTheme" label="Green" command="ChangeThemeCommand" commandParameter="Green,BaseLight" />
+      <MenuItem id="IndigoLightTheme" label="Indigo" command="ChangeThemeCommand" commandParameter="Indigo,BaseLight" />
+      <MenuItem id="LimeLightTheme" label="Lime" command="ChangeThemeCommand" commandParameter="Lime,BaseLight" />
+      <MenuItem id="MagentaLightTheme" label="Magenta" command="ChangeThemeCommand" commandParameter="Magenta,BaseLight" />
+      <MenuItem id="MauveLightTheme" label="Mauve" command="ChangeThemeCommand" commandParameter="Mauve,BaseLight" />
+      <MenuItem id="OliveLightTheme" label="Olive" command="ChangeThemeCommand" commandParameter="Olive,BaseLight" />
+      <MenuItem id="OrangeLightTheme" label="Orange" command="ChangeThemeCommand" commandParameter="Orange,BaseLight" />
+      <MenuItem id="PinkLightTheme" label="Pink" command="ChangeThemeCommand" commandParameter="Pink,BaseLight" />
+      <MenuItem id="PurpleLightTheme" label="Purple" command="ChangeThemeCommand" commandParameter="Purple,BaseLight" />
+      <MenuItem id="RedLightTheme" label="Red" command="ChangeThemeCommand" commandParameter="Red,BaseLight" />
+      <MenuItem id="SiennaLightTheme" label="Sienna" command="ChangeThemeCommand" commandParameter="Sienna,BaseLight" />
+      <MenuItem id="SteelLightTheme" label="Steel" command="ChangeThemeCommand" commandParameter="Steel,BaseLight" />
+      <MenuItem id="TaupeLightTheme" label="Taupe" command="ChangeThemeCommand" commandParameter="Taupe,BaseLight" />
+      <MenuItem id="TealLightTheme" label="Teal" command="ChangeThemeCommand" commandParameter="Teal,BaseLight" />
+      <MenuItem id="VioletLightTheme" label="Violet" command="ChangeThemeCommand" commandParameter="Violet,BaseLight" />
+      <MenuItem id="YellowLightTheme" label="Yellow" command="ChangeThemeCommand" commandParameter="Yellow,BaseLight" />
+    </Menu>
+    <Menu id="DarkMenu" label="Dark">
+      <MenuItem id="AmberDarkTheme" label="Amber" command="ChangeThemeCommand" commandParameter="Amber,BaseDark" />
+      <MenuItem id="BlueDarkTheme" label="Blue" command="ChangeThemeCommand" commandParameter="Blue,BaseDark" />
+      <MenuItem id="BrownDarkTheme" label="Brown" command="ChangeThemeCommand" commandParameter="Brown,BaseDark" />
+      <MenuItem id="CobaltDarkTheme" label="Cobalt" command="ChangeThemeCommand" commandParameter="Cobalt,BaseDark" />
+      <MenuItem id="CrimsonDarkTheme" label="Crimson" command="ChangeThemeCommand" commandParameter="Crimson,BaseDark" />
+      <MenuItem id="CyanDarkTheme" label="Cyan" command="ChangeThemeCommand" commandParameter="Cyan,BaseDark" />
+      <MenuItem id="EmeraldDarkTheme" label="Emerald" command="ChangeThemeCommand" commandParameter="Emerald,BaseDark" />
+      <MenuItem id="GreenDarkTheme" label="Green" command="ChangeThemeCommand" commandParameter="Green,BaseDark" />
+      <MenuItem id="IndigoDarkTheme" label="Indigo" command="ChangeThemeCommand" commandParameter="Indigo,BaseDark" />
+      <MenuItem id="LimeDarkTheme" label="Lime" command="ChangeThemeCommand" commandParameter="Lime,BaseDark" />
+      <MenuItem id="MagentaDarkTheme" label="Magenta" command="ChangeThemeCommand" commandParameter="Magenta,BaseDark" />
+      <MenuItem id="MauveDarkTheme" label="Mauve" command="ChangeThemeCommand" commandParameter="Mauve,BaseDark" />
+      <MenuItem id="OliveDarkTheme" label="Olive" command="ChangeThemeCommand" commandParameter="Olive,BaseDark" />
+      <MenuItem id="OrangeDarkTheme" label="Orange" command="ChangeThemeCommand" commandParameter="Orange,BaseDark" />
+      <MenuItem id="PinkDarkTheme" label="Pink" command="ChangeThemeCommand" commandParameter="Pink,BaseDark" />
+      <MenuItem id="PurpleDarkTheme" label="Purple" command="ChangeThemeCommand" commandParameter="Purple,BaseDark" />
+      <MenuItem id="RedDarkTheme" label="Red" command="ChangeThemeCommand" commandParameter="Red,BaseDark" />
+      <MenuItem id="SiennaDarkTheme" label="Sienna" command="ChangeThemeCommand" commandParameter="Sienna,BaseDark" />
+      <MenuItem id="SteelDarkTheme" label="Steel" command="ChangeThemeCommand" commandParameter="Steel,BaseDark" />
+      <MenuItem id="TaupeDarkTheme" label="Taupe" command="ChangeThemeCommand" commandParameter="Taupe,BaseDark" />
+      <MenuItem id="TealDarkTheme" label="Teal" command="ChangeThemeCommand" commandParameter="Teal,BaseDark" />
+      <MenuItem id="VioletDarkTheme" label="Violet" command="ChangeThemeCommand" commandParameter="Violet,BaseDark" />
+      <MenuItem id="YellowDarkTheme" label="Yellow" command="ChangeThemeCommand" commandParameter="Yellow,BaseDark" />
+    </Menu>
+  </Extension>
+
+</Addin>

@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="GySurface.Samples.Skeleton.Contents.BrowserContent"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GySurface.Samples.Skeleton.Contents"
+             xmlns:wfi="clr-namespace:System.Windows.Forms.Integration;assembly=WindowsFormsIntegration"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+
+    <DockPanel Margin="5" LastChildFill="True">
+
+        <StackPanel DockPanel.Dock="Top">
+            <Grid Margin="5 0 5 0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Label Content="URL:" Grid.Row="0" Grid.Column="0" Height="30"  Margin="0 0 0 0" />
+                <TextBox x:Name="txtUrl" Text="" Grid.Row="0"  Grid.Column="1" Height="50"  Margin="5 0 5 0" 
+                    ScrollViewer.HorizontalScrollBarVisibility="Visible"
+                    ScrollViewer.VerticalScrollBarVisibility="Visible"
+                    AcceptsReturn="True" AcceptsTab="True"  />
+                <Button x:Name="btnGo" Content="GO" Click="btnGo_Click"  Grid.Row="0"  Grid.Column="2" Width="50" Height="50"  Margin="5 0 0 0" />
+
+           </Grid>          
+        </StackPanel>
+
+
+        <wfi:WindowsFormsHost x:Name="wfh" Margin="0 5 0 0">
+
+
+
+        </wfi:WindowsFormsHost>
+
+    </DockPanel>
+</UserControl>

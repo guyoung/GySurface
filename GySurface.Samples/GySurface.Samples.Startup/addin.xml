@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+
+<Addin
+  id="_Host"
+  name="_Host"
+  version="1.0"
+  author="guyoung"
+  copyright=""
+  url=""
+  description=""
+  category="framework"
+  defaultEnabled="true"
+  isroot="true" >
+
+  <Dependencies>
+
+  </Dependencies>
+
+  <Runtime>
+
+  </Runtime>
+
+
+
+  <ExtensionPoint path="/Startup" name="/Startup" >
+    <Description></Description>
+    <ExtensionNode name="Shell"  />
+  </ExtensionPoint>
+</Addin>

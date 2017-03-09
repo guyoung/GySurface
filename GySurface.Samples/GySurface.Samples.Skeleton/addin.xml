@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Addin
+  id="_Skeleton"
+  name="_Skeleton"
+  version="1.0"
+  author=""
+  copyright=""
+  url=""
+  description=""
+  category=""
+  defaultEnabled="true">
+
+  <Dependencies>
+    <Addin id="_Shell" version="1.0" />
+  </Dependencies>
+
+  <Runtime>
+
+
+  </Runtime>
+
+  <Extension path = "/Shell/Services">
+   
+  </Extension>
+
+  <Extension path = "/Shell/Workareas">
+    <Workarea id="Home" name="Home"  title="Home" order="10" type="GySurface.Samples.Skeleton.Workareas.HomeWorkarea" />  
+    <Workarea id="Showcase" name="Showcase" title="Showcase" order="20" type="GySurface.Samples.Skeleton.Workareas.ShowcaseWorkarea" />
+  </Extension>
+
+  <ExtensionPoint path="/Shell/Showcase/Contents" name="/Shell/Showcase/Contents" >
+    <Description></Description>
+    <ExtensionNode name="Content" type="GySurface.Framework.Addin.ExtensionModels.DocumentExtensionNode"  />
+  </ExtensionPoint>
+
+</Addin>
